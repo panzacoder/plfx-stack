@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "plfx-stack",
+    "slug": "plfx-stack",
+    "owner": "panzacoder",
+    "version": "1.0.0",
+    "scheme": "plfx",
+    "userInterfaceStyle": "light",
+    "githubUrl": "https://github.com/panzacoder/plfx-stack",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#0F0F0F"
+    },
+    "platforms": ["ios", "android"],
+    "ios": {
+      "bundleIdentifier": "dev.plfx.stack"
+    },
+    "android": {
+      "package": "dev.plfx.stack"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "FILL_IN_PROJECT_ID"
+      }
+    }
+  }
+}

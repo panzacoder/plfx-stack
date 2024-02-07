@@ -1,0 +1,40 @@
+{
+  "name": "plfx-stack",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "0.73.3",
+    "react-native-web": "~0.19.10"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.52",
+    "@types/react-native": "^0.73.0",
+    "eslint": "^8.56.0",
+    "patch-package": "^8.0.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "turbo": "^1.12.2",
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "dev": "turbo dev",
+    "native": "turbo run dev --filter expo-app",
+    "web": "turbo run dev --filter next-app",
+    "web:sb": "pnpm run --dir=apps/next storybook",
+    "format": "prettier --write .",
+    "postinstall": "patch-package"
+  },
+  "resolutions": {
+    "react-native-reanimated": "3.6.2",
+    "@react-native/assets-registry": "^0.74.0"
+  },
+  "nohoist": [
+    "**/expo-router",
+    "**/expo-router/**"
+  ],
+  "license": "MIT"
+}

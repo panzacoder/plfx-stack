@@ -1,0 +1,43 @@
+diff --git a/node_modules/expo-asset/node_modules/@react-native/assets-registry/registry.js b/node_modules/expo-asset/node_modules/@react-native/assets-registry/registry.js
+index 02470da..c17ee67 100644
+--- a/node_modules/expo-asset/node_modules/@react-native/assets-registry/registry.js
++++ b/node_modules/expo-asset/node_modules/@react-native/assets-registry/registry.js
+@@ -8,31 +8,18 @@
+  * @format
+  */
+ 
+-'use strict';
++'use strict'
+ 
+-export type PackagerAsset = {
+-  +__packager_asset: boolean,
+-  +fileSystemLocation: string,
+-  +httpServerLocation: string,
+-  +width: ?number,
+-  +height: ?number,
+-  +scales: Array<number>,
+-  +hash: string,
+-  +name: string,
+-  +type: string,
+-  ...
+-};
++const assets = []
+ 
+-const assets: Array<PackagerAsset> = [];
+-
+-function registerAsset(asset: PackagerAsset): number {
++function registerAsset(asset) {
+   // `push` returns new array length, so the first asset will
+   // get id 1 (not 0) to make the value truthy
+-  return assets.push(asset);
++  return assets.push(asset)
+ }
+ 
+-function getAssetByID(assetId: number): PackagerAsset {
+-  return assets[assetId - 1];
++function getAssetByID(assetId) {
++  return assets[assetId - 1]
+ }
+ 
+-module.exports = {registerAsset, getAssetByID};
++module.exports = { registerAsset, getAssetByID }
