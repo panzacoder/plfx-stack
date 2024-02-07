@@ -32,26 +32,23 @@
 - Prerequisites:
 
   - Node v20
-  - yarn v4 (go to yarn's website to learn more about automatic yarn versioning with npm)
 
-- Install dependencies: `yarn`
+- Install dependencies: `npm i`
 
-- Next.js local dev: `yarn web`
-  - Runs `yarn next`
-
-> Make sure `yarn web` is running first, and then run the mobile app in another shell session.
+- Next.js local dev: `npm run web`
 
 - Expo local dev:
   - First, build a dev client onto your device or simulator
     - `cd apps/expo`
     - Then, either `expo run:ios`, or `eas build`
   - After building the dev client, from the root of the monorepo...
-    - `yarn native` (This runs `expo start --dev-client`)
+  - `yarn native` (This runs `expo start --dev-client`)
+    > Make sure `npm run web` is running first, and then run the mobile app in another shell session.
 
 ### Testing
 
 - Running Storybook
-  - Storybook local server: `yarn web:sb`
+  - Storybook local server: `npm run web:sb`
 
 # > The rest of this is from the starter I started from
 
