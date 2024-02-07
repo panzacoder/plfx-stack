@@ -1,8 +1,9 @@
 # PLFX Stack
-
+> Made by [plfx.dev](https://plfx.dev) <br>
+> If you find this template fruitful, [I would appreciate your support!](https://plfx.dev/support)
 ## Monorepo for Web + Mobile
 
-## 📦 Included packages
+### 📦 Included packages
 
 - `solito` for cross-platform navigation
 - `moti` for animations
@@ -12,7 +13,7 @@
 - Expo Router 3
 - Storybook 7 for documentation and testing of components
 
-## 🗂 Folder layout
+### 🗂 Folder layout
 
 - `apps` entry points for each app
 
@@ -27,7 +28,7 @@
     - `features` (I'm told not to organize by screens, but this folder feels alot like screens. idk I like the name features anyway).
     - `provider` (all the providers that wrap the app, and some no-ops for Web.)
 
-## 🏁 Start the app
+### 🏁 Start the app
 
 - Prerequisites:
 
