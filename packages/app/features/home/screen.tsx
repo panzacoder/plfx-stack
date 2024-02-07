@@ -6,12 +6,10 @@ import { Typography } from 'app/ui/typography'
 
 export function HomeScreen() {
   return (
-    <SplashBackground>
-      <View className="flex flex-1 items-center justify-center">
-        <Typography variant="h1" className="text-background">
-          {'Neat digs, huh?'}
-        </Typography>
-      </View>
-    </SplashBackground>
+    <View className="flex flex-1 items-center justify-center">
+      <Typography variant="h1" className="text-background">
+        {'Neat digs, huh?'}
+      </Typography>
+    </View>
   )
 }
