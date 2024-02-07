@@ -1,3 +1,5 @@
+[<img src='/apps/next/public/plfx-logo.png' width='50'>](https://plfx.dev)
+
 # PLFX Stack
 > Made by [plfx.dev](https://plfx.dev) <br>
 > If you find this template fruitful, [I would appreciate your support!](https://plfx.dev/support)
